@@ -10,6 +10,8 @@ except Exception:
     print("Required dependency 'scapy' not found. Install with: pip3 install scapy", file=sys.stderr)
     sys.exit(1)
 
+
+
 def packet_handler(pkt):
     if IP in pkt:
         src = pkt[IP].src
